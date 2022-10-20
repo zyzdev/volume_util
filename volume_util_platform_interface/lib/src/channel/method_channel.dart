@@ -67,7 +67,6 @@ class VolumeMethodChannel extends PlatformChannel {
           volume = args;
         }
         _volumeChangeStreamTypeController[streamType]!.add(volume);
-        debugPrint("streamType:${streamType.name}, volume:$volume");
         break;
       default:
         throw MissingPluginException();
