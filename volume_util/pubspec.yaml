@@ -1,5 +1,5 @@
 name: volume_util
-description: iOS implementation of the volume_util plugin.
+description: A flutter plugin to config and monitor volume.
 repository: https://github.com/zyzdev/volume_util/tree/main/volume_util
 version: 0.0.1
 
