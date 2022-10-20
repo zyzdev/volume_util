@@ -1,7 +1,7 @@
 name: volume_util
 description: A flutter plugin to config and monitor volume.
 repository: https://github.com/zyzdev/volume_util/tree/main/volume_util
-version: 0.0.1
+version: 0.0.2
 
 environment:
   sdk: '>=2.18.1 <3.0.0'
@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  volume_util_platform_interface: ^0.0.1
+  volume_util_platform_interface: ^0.0.5
   volume_util_android: ^0.0.1
   volume_util_ios: ^0.0.1
 

@@ -1,6 +1,6 @@
 # volume_util
 
-A flutter plugin to config and monitor volume.
+A flutter plugin to config and monitor volume. Support Android and iOS platform.
 
 ## Getting Started
 
