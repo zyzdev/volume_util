@@ -1,7 +1,7 @@
 name: volume_util_platform_interface
 description: A common platform interface for the volume_util plugin.
 repository: https://github.com/zyzdev/volume_util/tree/main/volume_util_platform_interface
-version: 0.0.3
+version: 0.0.4
 
 environment:
   sdk: '>=2.18.1 <3.0.0'

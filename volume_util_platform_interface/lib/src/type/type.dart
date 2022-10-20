@@ -1,16 +1,32 @@
 // ignore_for_file: constant_identifier_names
 
 enum StreamType {
-  ANDROID_STREAM_ACCESSIBILITY, /// android stream type, map to [STREAM_ACCESSIBILITY](https://developer.android.com/reference/android/media/AudioManager#STREAM_ACCESSIBILITY)
-  ANDROID_STREAM_ALARM,         /// android stream type, map to [STREAM_ALARM](https://developer.android.com/reference/android/media/AudioManager#STREAM_ALARM)
-  ANDROID_STREAM_DTMF,          /// android stream type, map to [STREAM_DTMF](https://developer.android.com/reference/android/media/AudioManager#STREAM_DTMF)
-  ANDROID_STREAM_MUSIC,         /// android stream type, map to [STREAM_MUSIC](https://developer.android.com/reference/android/media/AudioManager#STREAM_MUSIC)
-  ANDROID_STREAM_NOTIFICATION,  /// android stream type, map to [STREAM_NOTIFICATION](https://developer.android.com/reference/android/media/AudioManager#STREAM_NOTIFICATION)
-  ANDROID_STREAM_RING,          /// android stream type, map to [STREAM_RING](https://developer.android.com/reference/android/media/AudioManager#STREAM_RING)
-  ANDROID_STREAM_SYSTEM,        /// android stream type, map to [STREAM_SYSTEM](https://developer.android.com/reference/android/media/AudioManager#STREAM_SYSTEM)
-  ANDROID_STREAM_VOICE_CALL,    /// android stream type, map to [STREAM_VOICE_CALL](https://developer.android.com/reference/android/media/AudioManager#STREAM_VOICE_CALL)
+  /// android stream type, map to [STREAM_ACCESSIBILITY](https://developer.android.com/reference/android/media/AudioManager#STREAM_ACCESSIBILITY)
+  ANDROID_STREAM_ACCESSIBILITY,
 
-  IOS_STREAM_TYPE,              ///iOS stream type, one type only, just for platform distinction
+  /// android stream type, map to [STREAM_ALARM](https://developer.android.com/reference/android/media/AudioManager#STREAM_ALARM)
+  ANDROID_STREAM_ALARM,
+
+  /// android stream type, map to [STREAM_DTMF](https://developer.android.com/reference/android/media/AudioManager#STREAM_DTMF)
+  ANDROID_STREAM_DTMF,
+
+  /// android stream type, map to [STREAM_MUSIC](https://developer.android.com/reference/android/media/AudioManager#STREAM_MUSIC)
+  ANDROID_STREAM_MUSIC,
+
+  /// android stream type, map to [STREAM_NOTIFICATION](https://developer.android.com/reference/android/media/AudioManager#STREAM_NOTIFICATION)
+  ANDROID_STREAM_NOTIFICATION,
+
+  /// android stream type, map to [STREAM_RING](https://developer.android.com/reference/android/media/AudioManager#STREAM_RING)
+  ANDROID_STREAM_RING,
+
+  /// android stream type, map to [STREAM_SYSTEM](https://developer.android.com/reference/android/media/AudioManager#STREAM_SYSTEM)
+  ANDROID_STREAM_SYSTEM,
+
+  /// android stream type, map to [STREAM_VOICE_CALL](https://developer.android.com/reference/android/media/AudioManager#STREAM_VOICE_CALL)
+  ANDROID_STREAM_VOICE_CALL,
+
+  ///iOS stream type, one type only, just for platform distinction
+  IOS_STREAM_TYPE,
 }
 
 extension ToAndroidStreamType on StreamType {
