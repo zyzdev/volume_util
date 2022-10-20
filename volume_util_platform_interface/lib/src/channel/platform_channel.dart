@@ -19,11 +19,15 @@ abstract class PlatformChannel extends PlatformInterface {
     _instance = instance;
   }
 
+  /// get current volume.
   Future<double> getVolume(StreamType type);
 
+  /// set volume.
   Future<bool> setVolume(double volume, StreamType type);
 
+  /// show or hide system panel.
   Future<void> showSystemPanel(bool show);
 
+  /// return stream to watch the volume of the [StreamType] was changed.
   Stream<double> onVolumeChange(StreamType type);
 }

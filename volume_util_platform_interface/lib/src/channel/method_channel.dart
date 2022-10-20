@@ -15,12 +15,14 @@ class VolumeMethodChannel extends PlatformChannel {
     _channel.setMethodCallHandler(_handleMethodCall);
   }
 
+  /// get current volume.
   @override
   Future<double> getVolume(StreamType type) async {
     return (await _channel.invokeMethod<double>(
         "volume#get", Platform.isAndroid ? type.toStreamType() : null))!;
   }
 
+  /// set volume.
   @override
   Future<bool> setVolume(double volume, StreamType type) async {
     return await _channel.invokeMethod(
@@ -33,11 +35,13 @@ class VolumeMethodChannel extends PlatformChannel {
             : volume);
   }
 
+  /// show or hide system panel.
   @override
   Future<void> showSystemPanel(bool show) async {
     return await _channel.invokeMethod("showSystemPanel#set", show);
   }
 
+  /// return stream to watch the volume of the [StreamType] was changed.
   @override
   Stream<double> onVolumeChange(StreamType type) {
     _volumeChangeStreamTypeController[type] ??=
