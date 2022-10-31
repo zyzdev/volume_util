@@ -57,7 +57,7 @@ public class SwiftVolumeUtilIosPlugin: NSObject, FlutterPlugin {
     private func showSystemPanel(_ args: Any?) {
         let showSystemPanel = Bool(args as? Bool ?? true)
         if showSystemPanel != self.showSystemPanel {
-            if show {
+            if showSystemPanel {
                 mpVolumeView.removeFromSuperview()
             } else {
                 mpVolumeView.frame = CGRectMake(-100, -100, 50, 50)
