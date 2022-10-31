@@ -1,7 +1,7 @@
 name: volume_util_ios
 description: iOS implementation of the volume_util plugin.
 repository: https://github.com/zyzdev/volume_util/tree/main/volume_util_ios
-version: 0.0.1
+version: 0.0.2
 
 environment:
   sdk: '>=2.18.1 <3.0.0'
